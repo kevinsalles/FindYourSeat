@@ -1,11 +1,14 @@
 package find_your_seat;
 
-/**
- * Created by Kévin on 2016-12-14.
- */
+import ui.Form;
+import ui.FormFactory;
+
+
 public class Main {
+
     public static void main(String [] args)
     {
-        System.out.print("Systeme démarrer");
+        Form form = new FormFactory().getInstance();
+        form.run();
     }
 }
