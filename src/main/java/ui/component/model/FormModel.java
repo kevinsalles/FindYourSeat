@@ -1,16 +1,24 @@
 package ui.component.model;
 
-import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 
-/**
- * Created by Kévin on 2016-12-16.
- */
+import core.service.AssignationSeat;
+import core.service.AssignationSeatImpl;
+
 public class FormModel{
-    public FormModel(){
 
+    private AssignationSeat assignationSeat;
+
+    public FormModel(){
+        assignationSeat = new AssignationSeatImpl();
+    }
+
+    public Object[][] getDataTable(){
+        Object[][] data = {
+                {"Cysboy", "28 ans", "1.80 m"},
+                {"BZHHydde", "28 ans", "1.80 m"},
+                {"IamBow", "24 ans", "1.90 m"},
+                {"FunMan", "32 ans", "1.85 m"}
+        };;
+        return data;
     }
 }
