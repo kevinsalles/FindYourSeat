@@ -11,5 +11,4 @@ public class FormFactoryTest {
         Form form = new FormFactory().getInstance();
         assertNotNull(form);
     }
-
 }

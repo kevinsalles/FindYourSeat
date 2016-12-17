@@ -22,11 +22,4 @@ public class FormViewModelTest {
     public void givenAFormModel_whenCreateFormViewModel_thenShouldCreate(){
         assertNotNull(formViewModel);
     }
-
-    @Test
-    public void runTheForm(){
-        formViewModel.run();
-    }
-
-
 }
